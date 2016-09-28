@@ -1,0 +1,3868 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<!--[if IE 7 ]>    <html class= "ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class= "ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+<!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+   
+<!-- Mirrored from www.codetalks.de/2016/programm by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Sep 2016 06:49:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e5f5caca36","applicationID":"8164378","transactionName":"dF5bREYNWggHFExEVVtaRh9dDFIBGg==","queueTime":28,"applicationTime":1089,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>code.talks 2016 - Programm</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="/assets/favicons/codetalks-57x57-2aa8396a2a72d7e19a4fbf0ee04fbf44.png" sizes="57x57" />
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="/assets/favicons/codetalks-114x114-f81f19be70ce3f4624cfd1bda0b85c27.png" sizes="114x114" />
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="/assets/favicons/codetalks-72x72-9b0e7c6c33d9d95694ab76d50b3b72f7.png" sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="/assets/favicons/codetalks-144x144-f38ad9c698e90956ecfcf3449caf0a17.png" sizes="144x144" />
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="/assets/favicons/codetalks-60x60-eda7753e12d9ad5fdc120a8f304d0971.png" sizes="60x60" />
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="/assets/favicons/codetalks-120x120-bdd3781b27c580db04f8ff3454d71a56.png" sizes="120x120" />
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="/assets/favicons/codetalks-76x76-fae84fdeea2b001ab6dcfa2bc537726a.png" sizes="76x76" />
+<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="/assets/favicons/codetalks-152x152-5be2ec38ab7a120a838c5195487e05b0.png" sizes="152x152" />
+<link rel="icon" type="image/png" href="/assets/favicons/codetalks-196x196-fbd587aab00fdc51554b79063954e46b.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/favicons/codetalks-96x96-8cf27948e5153d47d09917e4f1e336fb.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/codetalks-32x32-5fd1b1d2fca4c09fb7f9f5c2b0c834d7.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/codetalks-16x16-ea957e38c85392977a05e27b56f3aab9.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/codetalks-128-3f65c5f67a6098fcbf9161e0d7728d25.png" sizes="128x128" />
+
+<meta name="application-name" content="code.talks"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="https://www.codetalks.de/assets/favicons/codetalks-144x144-f38ad9c698e90956ecfcf3449caf0a17.png" />
+<meta name="msapplication-square70x70logo" content="https://www.codetalks.de/assets/favicons/codetalks-70x70-5336a7cd72675ee7f27eb0496e23d4d9.png" />
+<meta name="msapplication-square150x150logo" content="https://www.codetalks.de/assets/favicons/codetalks-150x150-6a39abe0476d12e9f0b756f6eb1c5ba4.png" />
+<meta name="msapplication-wide310x150logo" content="https://www.codetalks.de/assets/favicons/codetalks-310x150-5da69540ebdab5060307110c58eda1f3.png" />
+<meta name="msapplication-square310x310logo" content="https://www.codetalks.de/assets/favicons/codetalks-310x310-b7fa85ef49477f6457d0cd4257f0d416.png" />
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="LilVz1SJHLrk6dMtouzXQRJEVk1fJEbVn49/ORWAOGNYHS4il9hpJn+Jh5vQV1GLNWIqAwMg/N1K1rFEC81YXA==" />
+    <meta name="twitter:widgets:csp" content="on">
+
+    <!-- general META Start (CMS-Snippet) -->
+    <meta name="author" content="Sarah-Christina Fitzke (AboutYou GmbH)">
+<meta name="keywords" content="eins, zwei">
+
+    <!-- general META End -->
+    <!-- open graph META start -->
+    <meta property="og:title" content="code.talks" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.codetalks.de/" />
+<!--
+<meta property="og:image" content="https://www.codetalks.de/assets/favicons/codetalks-310x310-b7fa85ef49477f6457d0cd4257f0d416.png" />
+-->
+<meta property="og:description" content="Die code.talks sind eine Plattform für Entwickler, Pro's, Studenten und Blogger. Die Entwicklerkonferenz wurde 2011 ins Leben gerufen und ist mit 1500 Teilnehmern eine der größten und wichtigsten Konferenzen im Bereich Web-Development in Deutschland und Europa." />
+
+    <!-- open graph META end -->
+
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- general CSS start -->
+    <link rel="stylesheet" media="all" href="/assets/application-c977b894b5fe5db5efecfa8579dc5647.css" />
+    <!-- general CSS end -->
+
+    <!-- page specific css start -->
+      <link rel="stylesheet" media="all" href="/assets/page-specific/talks-ca932d549afb90f8ad5de28785f81e8c.css" />
+
+    <!-- page specific css end -->
+
+    <!-- additional scripts start (CMS-Snippet) -->
+    <!-- additional scripts end -->
+</head>
+
+<body class="talks index">
+    <nav class="navbar navbar-default ">
+  <div class="container">
+
+    <div class="navbar-header">
+      <a rel="home" class="navbar-brand" href="../index.html"><img alt="code.talks" src="/assets/logo/codetalks_40-d44acd98c89297fd2aa7b042e2d63876.png" /></a>
+    </div>
+
+    <!-- Navigation DESKTOP-->
+    <div id="navbar" class="navbar-desktop">
+      <ul class="nav navbar-nav navbar-right">
+
+          <li>
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">Speaker <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="speaker.html">Übersicht</a></li>
+              <li><a href="call-for-papers.html">Call For Papers</a></li>
+            </ul>
+          </li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li class="active"><a class="active" href="programm.html">Programm</a></li>
+              <li><a href="location.html">Location</a></li>
+          </li>
+              <li><a href="uber-uns.html">Über uns</a></li>
+          </li>
+        <li><a href="sponsoren.html">Sponsoren</a></li>
+        <li><a href="kuratoren.html">Kuratoren</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">Rückblicke <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="../rueckblick/rueckblick-2014.html">Rückblick 2014</a></li>
+                <li><a href="../rueckblick/rueckblick-2015.html">Rückblick 2015</a></li>
+            </ul>
+          </li>
+
+
+      </ul>
+    </div>
+
+    <!-- Navigation MOBILE -->
+    <div id="dl-menu" class="dl-menuwrapper navbar-mobile">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li><a class="menu-item" href="../index.html">Home</a></li>
+
+          <li>
+            <a href="#">Speakers</a>
+            <ul class="dl-submenu">
+              <li><a href="speaker.html">Übersicht</a></li>
+              <li><a href="call-for-papers.html">Call For Papers</a></li>
+            </ul>
+          </li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li class="active"><a class="active" href="programm.html">Programm</a></li>
+              <li><a href="location.html">Location</a></li>
+          </li>
+              <li><a href="uber-uns.html">Über uns</a></li>
+          </li>
+        <li><a href="sponsoren.html">Sponsoren</a></li>
+        <li><a href="kuratoren.html">Kuratoren</a></li>
+          <li class="dropdown">
+            <a href="#">Rückblicke</a>
+            <ul class="dl-submenu">
+                <li><a href="../rueckblick/rueckblick-2014.html">Rückblick 2014</a></li>
+                <li><a href="../rueckblick/rueckblick-2015.html">Rückblick 2015</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+    <div class="background-image-wrapper">
+      <div class="background-image talks index"></div>
+      <div class="container">
+
+        <div class="row title-wrapper">
+          <div class="col-xs-12 text-xs-center text-sm-left">
+            <h1>  <i class="pe-7s-alarm"></i> Schedule 2016
+</h1>
+          </div>
+        </div>
+
+        <div class="row buttons-wrapper">
+          <div class="col-xs-12 col-sm-6 text-xs-center text-sm-left">
+
+          </div>
+          <div class="col-xs-12 col-sm-6 text-xs-center text-sm-right">
+
+          </div>
+        </div>
+
+
+
+<div class="row track-metas">
+
+
+
+</div>
+<!-- filters -->
+<div class="row filters">
+
+  <!-- for xs and smaller -->
+  <div class="col-xs-6 visible-xs filter-btn">
+    <a href="#" class="btn  filter-toggle">
+      <i class="fa fa-filter"></i> Filter
+    </a>
+  </div>
+  <div class="col-xs-6 visible-xs filter-btn">
+  </div>
+  <div class="col-xs-12 hidden-sm hidden-md hidden-lg hidden-xl mobile-filter-collapse">
+    <div class="mobile-filter-inner">
+      <div class="triangle"></div>
+      <div class="row">
+        <!-- single filter -->
+        <div class="col-xs-6 select-wrapper">
+          <label for="mobile-date-filter">Datum</label>
+          <select class="filter-trigger" data-name="date" id="mobile-date-filter">
+            <option value="">[alle]</option>
+            <option value="1475107200">Do, 29.09.</option>
+<option value="1475193600">Fr, 30.09.</option>
+          </select>
+        </div>
+        <!-- END of single filter -->
+
+        <!-- single filter -->
+        <div class="col-xs-6 select-wrapper">
+          <label for="mobile-room-filter">Raum</label>
+          <select class="filter-trigger" data-name="room" id="mobile-room-filter">
+            <option value="">[alle]</option>
+            <option value="2">K6</option>
+<option value="12">K1 – mytaxi</option>
+<option value="22">K2 – freiheit.com</option>
+<option value="32">P1 - hyyou</option>
+<option value="42">K4 – Metro</option>
+<option value="72">Alabama Kino</option>
+<option value="82">Foyer</option>
+          </select>
+        </div>
+        <!-- END of single filter -->
+
+        <!-- single filter -->
+        <div class="col-xs-12 select-wrapper">
+          <label for="mobile-track-filter">Track</label>
+          <select class="filter-trigger" data-name="track" id="mobile-track-filter">
+            <option value="">[alle]</option>
+            <option value="122">Big Data &amp; Skalierung</option>
+<option value="52">E-Commerce</option>
+<option value="102">IT Management</option>
+<option value="62">Infrastructure &amp; DevOps</option>
+<option value="12">Java</option>
+<option value="22">JavaScript</option>
+<option value="132">Keynote</option>
+<option value="162">Live Coding</option>
+<option value="172">Mobile</option>
+<option value="72">New Technology</option>
+<option value="32">PHP</option>
+<option value="82">UX/Frontend</option>
+          </select>
+        </div>
+        <!-- END of single filter -->
+
+        <!-- single filter -->
+        <div class="col-xs-6 select-wrapper">
+          <label for="mobile-level-filter">Level</label>
+          <select class="filter-trigger" data-name="level" id="mobile-level-filter">
+            <option value="">[alle]</option>
+            <option value="basic">Basic</option>
+<option value="advanced">Advanced</option>
+<option value="experts">Experts</option>
+<option value="all">for everyone</option>
+          </select>
+        </div>
+        <!-- END of single filter -->
+
+        <!-- single filter -->
+        <div class="col-xs-6 select-wrapper">
+          <label for="mobile-language-filter">Sprache</label>
+          <select class="filter-trigger" data-name="language" id="mobile-language-filter">
+            <option value="">[alle]</option>
+            <option value="german">Deutsch</option>
+<option value="english">Englisch</option>
+          </select>
+        </div>
+        <!-- END of single filter -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- sm and above -->
+  <div class="col-xs-12 hidden-xs reset-wrapper">
+    <div class="row">
+      <div class="col-md-4 col-lg-2 filter-btn">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-lg-2 filter-btn first hidden-xs">
+      <select class="cs-select cs-skin-border" data-name="date">
+        <option value="" disabled>Datum</option>
+        <option value="">[alle]</option>
+        <option value="1475107200">Do, 29.09.</option>
+<option value="1475193600">Fr, 30.09.</option>
+      </select>
+  </div>
+  <div class="col-xs-12 col-md-8 col-lg-4 filter-btn hidden-xs">
+      <select class="cs-select cs-skin-border" data-name="track">
+        <option value="" disabled>Track</option>
+        <option value="">[alle]</option>
+        <option value="122">Big Data &amp; Skalierung</option>
+<option value="52">E-Commerce</option>
+<option value="102">IT Management</option>
+<option value="62">Infrastructure &amp; DevOps</option>
+<option value="12">Java</option>
+<option value="22">JavaScript</option>
+<option value="132">Keynote</option>
+<option value="162">Live Coding</option>
+<option value="172">Mobile</option>
+<option value="72">New Technology</option>
+<option value="32">PHP</option>
+<option value="82">UX/Frontend</option>
+      </select>
+  </div>
+  <div class="col-xs-12 col-md-4 col-lg-2 filter-btn hidden-xs">
+      <select class="cs-select cs-skin-border" data-name="level">
+        <option value="" disabled>Level</option>
+        <option value="">[alle]</option>
+        <option value="basic">Basic</option>
+<option value="advanced">Advanced</option>
+<option value="experts">Experts</option>
+<option value="all">for everyone</option>
+      </select>
+  </div>
+  <div class="col-xs-12 col-md-4 col-lg-2 filter-btn hidden-xs">
+      <select class="cs-select cs-skin-border" data-name="language">
+        <option value="" disabled>Sprache</option>
+        <option value="">[alle]</option>
+        <option value="german">Deutsch</option>
+<option value="english">Englisch</option>
+      </select>
+  </div>
+  <div class="col-xs-12 col-md-4 col-lg-2 filter-btn last hidden-xs">
+      <select class="cs-select cs-skin-border" data-name="room">
+        <option value="" disabled>Raum</option>
+        <option value="">[alle]</option>
+        <option value="2">K6</option>
+<option value="12">K1 – mytaxi</option>
+<option value="22">K2 – freiheit.com</option>
+<option value="32">P1 - hyyou</option>
+<option value="42">K4 – Metro</option>
+<option value="72">Alabama Kino</option>
+<option value="82">Foyer</option>
+      </select>
+  </div>
+</div>
+<!-- end filters -->
+
+<div class="row content-wrapper session">
+
+
+        <div class="talk-date">
+            <h1>
+                Donnerstag, 29.09.2016
+            </h1>
+        </div>
+        <div class="clear"></div>
+
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              08:00
+              -
+              10:00
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- break start -->
+<div class="row break">
+    <div class="col-xs-3 col-sm-2">
+
+    </div>
+
+    <div class="conference-content col-xs-9 col-sm-10">
+        <h2>
+          Einlass &amp; Frühstück
+        </h2>
+
+        <div class="session-content">
+            Das Frühstücksbuffet befindet sich im Eingangsfoyer.
+
+Guten Appetit!
+        </div>
+    </div>
+</div>
+<!-- break end -->
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              09:15
+              -
+              09:45
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- break start -->
+<div class="row break">
+    <div class="col-xs-3 col-sm-2">
+
+    </div>
+
+    <div class="conference-content col-xs-9 col-sm-10">
+        <h2>
+          Begrüßung
+        </h2>
+
+        <div class="session-content">
+            Begrüßung aller Teilnehmer und Vorstellung der Kuratoren
+        </div>
+    </div>
+</div>
+<!-- break end -->
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              10:00
+              -
+              10:45
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/die-rueckkehr-der-vernunft">Die Rückkehr der Vernunft?</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/johann-peter-hartmann-1773">Johann-Peter Hartmann</a> (Mayflower GmbH), <a href="https://www.codetalks.de/2016/speaker/lars-jankowfsky-1683">Lars  Jankowfsky </a> (.NFQ | Group )
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        New Technology
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/client-and-server-side-rendering-is-not-a-contradiction">Client and server-side rendering is not a contradiction.</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/dimitrios-kiriakakis">Dimitrios Kiriakakis</a> (eSailors IT solutions GmbH), <a href="https://www.codetalks.de/2016/speaker/clemens-tirsch">Clemens Tirsch</a> (eSailors IT solutions GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="22" href="javascript:void();">JavaScript</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/the-modern-enterprise-stack-engineering-the-future">The modern enterprise stack: engineering the future</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/boyan-dimitrov">Boyan  Dimitrov</a> (Sixt SE)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="72" href="javascript:void();">New Technology</a>
+        <i class="pe-7s-angle-right"></i>
+        IT Management
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/aller-guten-dingen-sind-drei">Aller guten Dingen sind drei</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/torsten-franz">Torsten Franz</a> (ABOUT YOU GmbH), <a href="https://www.codetalks.de/2016/speaker/nils-langner">Nils Langner</a> (Bauer Xcel)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="102" href="javascript:void();">IT Management</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/aufbau-einer-vollautomatischen-fast-data-plattform">Aufbau einer vollautomatischen Fast Data Plattform</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/bernd-zuther-1983">Bernd Zuther</a> (codecentric AG)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="122" href="javascript:void();">Big Data &amp; Skalierung</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/build-measure-learn-erfolgreiche-mobile-entwicklung-im-devops-stil">Build, Measure, Learn: Erfolgreiche Mobile-Entwicklung im DevOps-Stil</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/neno-loje">Neno Loje</a> (Freier Berater ), <a href="https://www.codetalks.de/2016/speaker/joerg-neumann">Jörg Neumann</a> (Acando)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="172" href="javascript:void();">Mobile</a>
+        <i class="pe-7s-angle-right"></i>
+        Infrastructure &amp; DevOps
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              11:00
+              -
+              11:45
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/100-services-and-counting-changing-a-large-organization-by-introducing-microservices-and-establishing-an-agile-organization">100+ Services and Counting: Changing a Large Organization by Introducing Microservices and Establishing an Agile Organization. </a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/stefan-richter-2653">Stefan  Richter</a> (freiheit.com technologies )
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/applying-the-magic-of-neural-networks-machine-learning-with-nodejs">Applying the magic of neural networks: Machine Learning with nodejs</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/lian-li">Lian Li</a> (selbständig)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="22" href="javascript:void();">JavaScript</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/effizienter-entwickeln-mit-funktionaler-programmierung">Effizienter entwickeln mit funktionaler Programmierung</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/michael-sperber">Michael  Sperber</a> (Active Group GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="72" href="javascript:void();">New Technology</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/working-with-diverse-distributed-software-teams-lessons-learned-from-a-10-years-journey">Working with diverse &amp; distributed software teams. Lessons learned from a 10 years’ journey.</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/fuesun-wehrmann">Füsun Wehrmann</a> (XING AG)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="102" href="javascript:void();">IT Management</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/from-bash-to-streaming-with-hadoop-and-everything-beyond">From bash to streaming with Hadoop and everything beyond</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/thees-gieselmann">Thees  Gieselmann</a> (mytaxi), <a href="https://www.codetalks.de/2016/speaker/dr-tereza-iofciu">Dr. Tereza  Iofciu</a> (mytaxi)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="122" href="javascript:void();">Big Data &amp; Skalierung</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/reactnative-eine-einfuehrung">ReactNative – eine Einführung</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/oliver-ochs-1683">Oliver Ochs</a> (Holisticon AG)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="172" href="javascript:void();">Mobile</a>
+        <i class="pe-7s-angle-right"></i>
+        New Technology
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              12:00
+              -
+              12:45
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/progressive-web-apps">Progressive Web Apps</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/thomas-steiner-2023">Thomas Steiner</a> (Google)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        Mobile
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/flow-vs-typescript-typen-systeme-fuer-javascript">Flow vs TypeScript – Typen-Systeme für JavaScript</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/oliver-zeigermann">Oliver Zeigermann</a> (embarc / Freiberufler)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="22" href="javascript:void();">JavaScript</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/scala-durch-java-8-ueberfluessig-geworden">Scala – durch Java 8 überflüssig geworden?</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/lutz-huehnken-2613">Lutz  Hühnken</a> (Lightbend, Inc.)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="72" href="javascript:void();">New Technology</a>
+        <i class="pe-7s-angle-right"></i>
+        Java
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/der-kunde-das-unverschaemte-wesen-oder-warum-niemand-dem-kaiser-sagt-dass-er-keine-kleider-an-hat">Der Kunde, das unverschämte Wesen – oder warum niemand dem Kaiser sagt, dass er keine Kleider an hat</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/sebastian-bernt-2163">Sebastian Bernt</a> (GLOBIT – Global Information Technology GmbH), <a href="https://www.codetalks.de/2016/speaker/christian-roth">Christian Roth</a> (Agile Coach – Christian Roth)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="102" href="javascript:void();">IT Management</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/implementing-and-testing-true-streaming-applications-with-apache-flink">Implementing and Testing True Streaming Applications with Apache Flink</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/christian-kreutzfeldt">Christian Kreutzfeldt</a> (Otto Group)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="122" href="javascript:void();">Big Data &amp; Skalierung</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/kotlin-ist-auch-eine-insel">Kotlin ist auch eine Insel</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/lovis-moeller">Lovis Möller</a> (Magicline GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="172" href="javascript:void();">Mobile</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              13:00
+              -
+              14:00
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- break start -->
+<div class="row break">
+    <div class="col-xs-3 col-sm-2">
+
+    </div>
+
+    <div class="conference-content col-xs-9 col-sm-10">
+        <h2>
+          Mittagspause
+        </h2>
+
+        <div class="session-content">
+            Das Buffet findet Ihr im Eingangsfoyer und in der Vorhalle.
+
+Guten Appetit!
+        </div>
+    </div>
+</div>
+<!-- break end -->
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              14:00
+              -
+              14:45
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/code-university-of-applied-sciences-i-g-eine-moderne-hochschule-fuer-entwickler">CODE University of Applied Sciences i.G. – Eine moderne Hochschule für Entwickler</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/thomas-bachem-1833">Thomas Bachem</a> (CODE University)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        IT Management
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/localisation-is-easy-or-isn-t-it">Localisation is easy. Or isn&#39;t it?</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/tina-umlandt">Tina  Umlandt</a> (Jimdo)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="22" href="javascript:void();">JavaScript</a>
+        <i class="pe-7s-angle-right"></i>
+        UX/Frontend
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/reactive-realtime-for-fun-and-profit">Reactive Realtime for fun and profit</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/wolfram-hempel">Wolfram Hempel </a> (deepstream)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="72" href="javascript:void();">New Technology</a>
+        <i class="pe-7s-angle-right"></i>
+        Infrastructure &amp; DevOps
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/deine-webseite-wurde-gehackt-und-du-hast-es-nicht-gemerkt">Deine Webseite wurde gehackt und du hast es nicht gemerkt</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/thomas-lohner-2693">Thomas  Lohner</a> (ScaleCommerce GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="102" href="javascript:void();">IT Management</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/serving-real-time-push-notifications-for-millions-of-saved-searches">Serving real time push-notifications for millions of saved searches</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/andre-charton">André Charton</a> (eBay Kleinanzeigen), <a href="https://www.codetalks.de/2016/speaker/christiane-lemke">Christiane Lemke</a> (eBay Kleinanzeigen)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="122" href="javascript:void();">Big Data &amp; Skalierung</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/hyper-accurate-mobile-geolocation-apps">Hyper‐Accurate Mobile Geolocation Apps </a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/david-nellessen">David Nellessen</a> (Familonet GmbH )
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="172" href="javascript:void();">Mobile</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              15:00
+              -
+              15:45
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/high-perf-architecture-at-stack-overflow">High perf architecture at Stack Overflow</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/marco-cecconi-2653">Marco Cecconi</a> (Stack Overflow)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        Big Data &amp; Skalierung
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/webanwendungen-mit-react-entwickeln">Webanwendungen mit React entwickeln</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/nils-hartmann">Nils Hartmann</a> (Techniker Krankenkasse)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="22" href="javascript:void();">JavaScript</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/implementing-binary-protocols-with-elixir">Implementing binary protocols with Elixir</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/ole-michaelis">Ole Michaelis</a> (Jimdo)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="72" href="javascript:void();">New Technology</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/social-apps-how-apps-can-help-where-it-s-really-needed">Social Apps – How apps can help where it&#39;s really needed</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/vanesa-ortiz">Vanesa Ortiz</a> (LOVOO)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="102" href="javascript:void();">IT Management</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/last-und-performancetests-in-der-cloud">Last- und Performancetests in der Cloud?!</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/sebastian-cohnen">Sebastian Cohnen</a> (StormForger GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="122" href="javascript:void();">Big Data &amp; Skalierung</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/mobile-fraud-prevention">Mobile Fraud Prevention</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/carlo-szelinsky">Carlo Szelinsky</a> (Digital Innovation GmbH (Gruner und Jahr))
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="172" href="javascript:void();">Mobile</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              16:00
+              -
+              16:45
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/understanding-customer-journeys-with-deep-learning">Understanding Customer Journeys with Deep Learning</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/tobias-lang">Tobias Lang </a> (Zalando SE), <a href="https://www.codetalks.de/2016/speaker/matthias-rettenmeier">Matthias  Rettenmeier </a> (Zalando SE )
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        Big Data &amp; Skalierung
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/angular2-real-time-anwendungen-mit-typescript-entwickeln">Angular2 – Real-Time-Anwendungen mit TypeScript entwickeln</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/florian-buecklers">Florian Bücklers</a> (Baqend), <a href="https://www.codetalks.de/2016/speaker/hannes-kuhlmann">Hannes Kuhlmann</a> (Baqend)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="22" href="javascript:void();">JavaScript</a>
+        <i class="pe-7s-angle-right"></i>
+        Live Coding
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/phalcon-3-0-zephir">Phalcon 3.0 &amp; Zephir</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/andres-gutierrez">Andres   Gutierrez</a> (Phalcon PHP)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="72" href="javascript:void();">New Technology</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/aspects-of-code-quality">Aspects of Code Quality.</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/andreas-haberberger">Andreas Haberberger</a> (Mayflower GmbH), <a href="https://www.codetalks.de/2016/speaker/maximilian-berghoff">Maximilian  Berghoff</a> (Mayflower GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="102" href="javascript:void();">IT Management</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/ungefaehr-populaer-trackingdaten-zur-sortierung-von-suchergebnissen">Ungefähr populär: Trackingdaten zur Sortierung von Suchergebnissen</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/tobias-kaessmann">Tobias Kässmann</a> (Shopping24), <a href="https://www.codetalks.de/2016/speaker/joerg-rathlev">Jörg Rathlev</a> (Shopping24)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="122" href="javascript:void();">Big Data &amp; Skalierung</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/ios-keeping-up-with-apple-ios-10-apis-watch-touch-id-3d-touch">iOS: Keeping up with Apple (iOS 10 apis, Watch, Touch ID, 3D Touch)</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/philipp-schoene">Philipp Schöne</a> (mytaxi)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="172" href="javascript:void();">Mobile</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              17:00
+              -
+              17:45
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/microservices-hype-oder-schon-realitaet">Microservices – Hype oder schon Realität?</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/benedikt-stemmildt-2193">Benedikt Stemmildt</a> (OTTO (GmbH &amp; Co. KG)), <a href="https://www.codetalks.de/2016/speaker/martin-kalsow">Martin Kalsow</a> (Otto GmbH &amp; Co KG)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        IT Management
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/architekturvisualisierung-mit-d3">Architekturvisualisierung mit D3</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/dr-maik-wurdel">Dr. Maik Wurdel</a> (EOS IT Services GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="22" href="javascript:void();">JavaScript</a>
+        <i class="pe-7s-angle-right"></i>
+        UX/Frontend
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/a-fintech-startup-with-a-technology-stack-based-on-functional-programming">A FinTech-Startup with a technology stack based on functional programming</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/moritz-drexl">Moritz  Drexl</a> (Metrix Financial Reporting Solutions UG), <a href="https://www.codetalks.de/2016/speaker/ruben-moor">Ruben Moor</a> (Metrix Financial Reporting Solutions UG)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="72" href="javascript:void();">New Technology</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/anforderungen-haben-immer-schuld-komplexitaet-beherrschen-mit-gutem-anforderungsmanagement">Anforderungen haben immer Schuld – Komplexität beherrschen mit gutem Anforderungsmanagement</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/frank-duesterbeck">Frank  Düsterbeck</a> (HEC GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="102" href="javascript:void();">IT Management</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/basics-of-machine-learning-no-magic-just-math">Basics of Machine Learning – No Magic, Just Math!</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/roman-tilgner">Roman  Tilgner</a> (TWT Business Solutions GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="122" href="javascript:void();">Big Data &amp; Skalierung</a>
+        <i class="pe-7s-angle-right"></i>
+        New Technology
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/behavior-driven-development-in-android">Behavior Driven Development in Android</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/teresa-holfeld">Teresa Holfeld</a> (Ubilabs), <a href="https://www.codetalks.de/2016/speaker/selim-salman">Selim Salman</a> (Ubilabs)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="172" href="javascript:void();">Mobile</a>
+        <i class="pe-7s-angle-right"></i>
+        IT Management
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              18:00
+              -
+              04:00
+              <span class="visible-when-sticky">
+                (Do)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- break start -->
+<div class="row break">
+    <div class="col-xs-3 col-sm-2">
+
+    </div>
+
+    <div class="conference-content col-xs-9 col-sm-10">
+        <h2>
+          Afterwork-Party
+        </h2>
+
+        <div class="session-content">
+            Party &amp; Code!
+
+Die Afterworkparty findet auch im Kampnagel statt.
+        </div>
+    </div>
+</div>
+<!-- break end -->
+          </div>
+
+        <div class="talk-date">
+            <h1>
+                Freitag, 30.09.2016
+            </h1>
+        </div>
+        <div class="clear"></div>
+
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              09:00
+              -
+              10:00
+              <span class="visible-when-sticky">
+                (Fr)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- break start -->
+<div class="row break">
+    <div class="col-xs-3 col-sm-2">
+
+    </div>
+
+    <div class="conference-content col-xs-9 col-sm-10">
+        <h2>
+          Einlass &amp; Frühstück
+        </h2>
+
+        <div class="session-content">
+            Das Frühstücksbuffet befindet sich im Eingangsfoyer.
+
+Guten Appetit!
+        </div>
+    </div>
+</div>
+<!-- break end -->
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              10:00
+              -
+              10:45
+              <span class="visible-when-sticky">
+                (Fr)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/autoscaling-wordpress-with-docker-aws">AutoScaling WordPress with Docker &amp; AWS</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/marko-heijnen">Marko Heijnen</a> (Plesk), <a href="https://www.codetalks.de/2016/speaker/jan-loeffler-2073">Jan Löffler</a> (Plesk)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        Big Data &amp; Skalierung, E-Commerce, Infrastructure &amp; DevOps
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/grids-glory">Grids &amp; Glory</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/sven-wolfermann">Sven  Wolfermann</a> (maddesigns)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="82" href="javascript:void();">UX/Frontend</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/advanced-clojure-microservices">Advanced Clojure Microservices</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/tobias-bayer">Tobias Bayer</a> (inovex GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="62" href="javascript:void();">Infrastructure &amp; DevOps</a>
+        <i class="pe-7s-angle-right"></i>
+        New Technology
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/mit-clojure-und-datomic-ins-neue-jahrtausend">Mit Clojure und Datomic ins neue Jahrtausend</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/dr-lukas-buhne">Dr. Lukas  Buhné</a> (funzt.jetzt UG), <a href="https://www.codetalks.de/2016/speaker/leon-grapenthin">Leon  Grapenthin</a> (funzt.jetzt UG )
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="72" href="javascript:void();">New Technology</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/einfuehrung-in-clean-architecture-mit-php">Einführung in Clean Architecture mit PHP</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/tim-boettcher">Tim  Böttcher</a> (arvato eCommerce ), <a href="https://www.codetalks.de/2016/speaker/christian-bergau">Christian Bergau</a> (arvato eCommerce )
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="32" href="javascript:void();">PHP</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/gut-dokumentiert-ist-halb-gesichert">Gut dokumentiert ist halb gesichert</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/dr-jan-christian-krause">Dr. Jan-Christian  Krause</a> (Iteratec GmbH), <a href="https://www.codetalks.de/2016/speaker/benjamin-pfaender">Benjamin  Pfänder </a> (Iteratec GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="12" href="javascript:void();">Java</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              11:00
+              -
+              11:45
+              <span class="visible-when-sticky">
+                (Fr)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/metro-s-journey-into-microservices-experience-and-lessons-learned-along-the-way">METRO’s Journey into Microservices: Experience and Lessons learned along the way</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/vahid-gharavi">Vahid  Gharavi</a> (METRO AG), <a href="https://www.codetalks.de/2016/speaker/sven-lipowski">Sven  Lipowski</a> (METRO AG )
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        Big Data &amp; Skalierung, E-Commerce, IT Management, New Technology
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/always-on-oder">Always on, oder?</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/carsten-sandtner">Carsten Sandtner</a> (mediaman GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="82" href="javascript:void();">UX/Frontend</a>
+        <i class="pe-7s-angle-right"></i>
+        JavaScript, Mobile
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/how-to-hot-swap-your-container-platform">How to hot-swap your container platform</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/benny-cornelissen">Benny  Cornelissen</a> (Xebia)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="62" href="javascript:void();">Infrastructure &amp; DevOps</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/eventsourcing-und-cqrs-oder-die-3-spalten-fuer-alles-architektur">EventSourcing und CQRS oder die 3-Spalten-für-alles-Architektur</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/raimo-radczewski">Raimo Radczewski</a> (Vaamo Finanz AG)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="72" href="javascript:void();">New Technology</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/don-t-fear-the-walking-dead-how-to-get-rid-of-a-zombie">Don&#39;t fear the walking dead – how to get rid of a zombie</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/sebastian-heuer-1823">Sebastian Heuer</a> (die kartenmacherei GmbH), <a href="https://www.codetalks.de/2016/speaker/sebastian-thoss">Sebastian Thoß</a> (die kartenmacherei GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="32" href="javascript:void();">PHP</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/technische-schulden-im-team-erkennen-und-abbauen">Technische Schulden im Team erkennen und abbauen</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/dr-carola-lilienthal">Dr. Carola Lilienthal</a> (WPS - Workplace Solutions)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="12" href="javascript:void();">Java</a>
+        <i class="pe-7s-angle-right"></i>
+        PHP
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              12:00
+              -
+              12:45
+              <span class="visible-when-sticky">
+                (Fr)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/echte-innovation-liefern">Echte Innovation liefern</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/judith-andresen-2073">Judith  Andresen</a> (BERATUNG JUDITH ANDRESEN)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        IT Management
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/everybody-lies">Everybody Lies</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/niels-leenheer-1873">Niels Leenheer</a> (HTML5test.com)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="82" href="javascript:void();">UX/Frontend</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/containers-change-everything">Containers Change Everything</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/anne-currie">Anne Currie</a> (Microscaling Systems)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="62" href="javascript:void();">Infrastructure &amp; DevOps</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/handling-billions-of-edges-in-a-graph-database">Handling Billions Of Edges in a Graph Database</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/michael-hackstein-2353">Michael Hackstein</a> ( ArangoDB GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="72" href="javascript:void();">New Technology</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/divide-and-conquer-2-years-of-cqrs-in-production">Divide and Conquer – 2 years of CQRS in production</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/holger-woltersdorf">Holger Woltersdorf</a> (Fortuneglobe GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="32" href="javascript:void();">PHP</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/schneller-in-die-cloud-mit-modernen-java-frameworks">Schneller in die Cloud mit modernen Java Frameworks</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/jens-fischer">Jens Fischer</a> (ePages GmbH), <a href="https://www.codetalks.de/2016/speaker/oliver-trosien-2233">Oliver  Trosien</a> (ePages GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="12" href="javascript:void();">Java</a>
+        <i class="pe-7s-angle-right"></i>
+        Live Coding
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              13:00
+              -
+              14:00
+              <span class="visible-when-sticky">
+                (Fr)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- break start -->
+<div class="row break">
+    <div class="col-xs-3 col-sm-2">
+
+    </div>
+
+    <div class="conference-content col-xs-9 col-sm-10">
+        <h2>
+          Mittagspause
+        </h2>
+
+        <div class="session-content">
+            Das Buffet findet Ihr im Eingangsfoyer und in der Vorhalle.
+
+Guten Appetit!
+        </div>
+    </div>
+</div>
+<!-- break end -->
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              14:00
+              -
+              14:45
+              <span class="visible-when-sticky">
+                (Fr)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/agiles-team-setup-in-selbstorganisation">Agiles Team Setup in Selbstorganisation</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/robert-gies">Robert Gies</a> (Shopgate GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        IT Management
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/amp-tries-to-fix-the-web-what-can-we-learn-from-it">AMP tries to fix the web. What can we learn from it?</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/stefan-judis-2363">Stefan  Judis</a> (Contentful)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="82" href="javascript:void();">UX/Frontend</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="basic" href="javascript:void();">Basic</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/when-traffic-hits-you-scaling-your-stack">When traffic hits you - scaling your stack</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/robin-mueller">Robin Müller</a> ( Lesara GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="62" href="javascript:void();">Infrastructure &amp; DevOps</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/mit-qt-quickcontrols2-in-45-minuten-vom-entwurf-zur-mobilen-app-fuer-android-und-ios">Mit Qt QuickControls2 in 45 Minuten vom Entwurf zur mobilen APP für Android und iOS</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/ekkehard-gentz">Ekkehard Gentz</a> (Independent)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="162" href="javascript:void();">Live Coding</a>
+        <i class="pe-7s-angle-right"></i>
+        Mobile
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/eine-neue-aera-der-php-profiler">Eine neue Ära der PHP Profiler</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/sandro-keil">Sandro Keil</a> (prooph software GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="32" href="javascript:void();">PHP</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/highway-to-hell-or-stairway-to-heaven-microservices">Highway to Hell or Stairway to Heaven: Microservices!</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/sebastian-reese">Sebastian Reese</a> (InnoGames GmbH )
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="12" href="javascript:void();">Java</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              15:00
+              -
+              15:45
+              <span class="visible-when-sticky">
+                (Fr)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/git-how-to-unfuck">Git – How to Unfuck</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/melanie-g-a-patrick">Melanie  G.A. Patrick</a> (trivago GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        Infrastructure &amp; DevOps
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/the-not-so-zen-art-of-the-japanese-website">The Not-So-Zen Art of the Japanese Website</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/jennifer-geacone-cruz-2573">Jennifer Geacone-Cruz</a> (Independent Consultant)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="82" href="javascript:void();">UX/Frontend</a>
+        <i class="pe-7s-angle-right"></i>
+        Mobile
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/architecting-the-cloud">Architecting the Cloud</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/christian-jantz">Christian  Jantz</a> (SAFEWRD)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="62" href="javascript:void();">Infrastructure &amp; DevOps</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/live-coding-in-go-building-an-intelligent-agent-as-a-microservice-using-emacs-the-slack-api-grpc-and-kubernetes">Live Coding in Go: Building an Intelligent Agent as a Microservice Using Emacs, the Slack API, gRPC and Kubernetes.</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/stefan-richter-2653">Stefan  Richter</a> (freiheit.com technologies )
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="162" href="javascript:void();">Live Coding</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/codeception-acceptance-tests">Codeception Acceptance Tests</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/roland-golla">Roland  Golla</a> (Entwicklungshilfe NRW)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="32" href="javascript:void();">PHP</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/the-science-of-e-commerce">The Science of E-Commerce</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/michel-ferreira">Michel Ferreira</a> (booking.com)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="52" href="javascript:void();">E-Commerce</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              16:00
+              -
+              16:45
+              <span class="visible-when-sticky">
+                (Fr)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K6
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/spryker-commerce-framework-in-a-nutshell">Spryker commerce framework in a nutshell</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/fabian-wesner-1683">Fabian Wesner</a> (Spryker Systems GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="132" href="javascript:void();">Keynote</a>
+        <i class="pe-7s-angle-right"></i>
+        E-Commerce
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/responsive-testing-mit-galen">Responsive Testing mit Galen</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/martin-reinhardt">Martin  Reinhardt</a> (Holisticon AG)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="82" href="javascript:void();">UX/Frontend</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/continuous-delivery-with-kubernetes">Continuous Delivery with Kubernetes</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/tobias-schwab">Tobias Schwab</a> (PhraseApp)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="62" href="javascript:void();">Infrastructure &amp; DevOps</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/crush-bugs-at-compile-time-with-rust">Crush bugs at compile-time with Rust !</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/sebastian-thiel">Sebastian Thiel</a> (ThoughtWorks)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="162" href="javascript:void();">Live Coding</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/zend-expressive-hoeher-schneller-weiter">Zend\Expressive – höher, schneller, weiter</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/ralf-eggert">Ralf Eggert</a> (Travello GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="32" href="javascript:void();">PHP</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/going-big-lessons-learned-from-scaling-out-ecommerce-systems-in-a-short-time">Going Big - Lessons learned from Scaling out eCommerce Systems in a short Time</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/dr-florian-krause-2273">Dr. Florian Krause</a> (Rebelle - Style Remains GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="52" href="javascript:void();">E-Commerce</a>
+        <i class="pe-7s-angle-right"></i>
+        Infrastructure &amp; DevOps
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+          <div class="col-xs-12 time">
+            <div class="sticky-time">
+              17:00
+              -
+              17:45
+              <span class="visible-when-sticky">
+                (Fr)
+              </span>
+            </div>
+          </div>
+
+          <div class="talks-wrapper col-xs-12">
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K1 – mytaxi
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/web-performance-die-effektivsten-techniken-aus-der-praxis">Web Performance – die effektivsten Techniken aus der Praxis</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/erik-witt">Erik  Witt</a> (Baqend)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="82" href="javascript:void();">UX/Frontend</a>
+        <i class="pe-7s-angle-right"></i>
+        Infrastructure &amp; DevOps, New Technology
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K2 – freiheit.com
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/terraform-cloud-konfigurationsmanagement">Terraform Cloud-Konfigurationsmanagement</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/martin-schuette">Martin  Schütte</a> (martinschuette.de)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="62" href="javascript:void();">Infrastructure &amp; DevOps</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    P1 - hyyou
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/live-coding-in-clojure-writing-a-microservice-from-scratch">Live Coding in Clojure: Writing a Microservice from Scratch</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/rasmus-buchmann">Rasmus  Buchmann</a> (freiheit.com technologies)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="162" href="javascript:void();">Live Coding</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    K4 – Metro
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/chefkoch-goes-drupal8">Chefkoch goes Drupal8</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/per-bernhardt-2413">Per Bernhardt</a> (Chefkoch GmbH)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="32" href="javascript:void();">PHP</a>
+
+
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="advanced" href="javascript:void();">Advanced</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="german" href="javascript:void();">Deutsch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+              <!-- talk, workshop, break, discussion, open -->
+              <!-- session start -->
+<div class="row talk">
+  <div class="col-xs-3 col-sm-2 talk-room">
+    Alabama Kino
+  </div>
+
+  <div class="col-xs-9 col-sm-10">
+    <h2>
+      <a href="https://www.codetalks.de/2016/programm/replatforming-it-infrastructures-why-microservices-is-not-the-single-best-choice">Replatforming IT Infrastructures: Why Microservices is not the single best choice.</a><br />
+    </h2>
+
+    <div class="session-content">
+      <div class="speaker">
+        <span class="session-label">Speaker:</span>
+        <a href="https://www.codetalks.de/2016/speaker/tim-niemeier">Tim  Niemeier</a> (Tim Niemeier)
+      </div>
+      <div class="track">
+        <span class="session-label">Track:</span>
+        <a class="filter-link" data-key="track" data-value="52" href="javascript:void();">E-Commerce</a>
+        <i class="pe-7s-angle-right"></i>
+        IT Management, New Technology
+      </div>
+
+      <div class="level">
+        <span class="session-label">Level:</span>
+        <a class="filter-link" data-key="level" data-value="all" href="javascript:void();">for everyone</a>
+      </div>
+      <div class="language">
+        <span class="session-label">Language:</span>
+        <a class="filter-link" data-key="language" data-value="english" href="javascript:void();">Englisch</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- session end -->
+
+          </div>
+
+
+</div>
+
+
+<!-- loading overlay -->
+<div id="overlay"><div class="spinner"></div></div>
+
+
+      </div>
+    </div>
+
+    <div class="container">
+  <div class="row footer-wrapper">
+    <div class="col-xs-12 col-md-3 text-xs-center text-md-left copyright">
+      &copy; 2016 code.talks
+    </div>
+    <div class="col-xs-12 col-md-7 text-center footer-menu">
+        <a href="https://www.codetalks.de/static/agb">AGB</a>
+        <a href="https://www.codetalks.de/static/datenschutz">Datenschutz</a>
+        <a href="../static/kontakt.html">Kontakt</a>
+        <a href="https://www.codetalks.de/static/impressum">Impressum</a>
+      <a href="newsletter.html">Newsletter</a>
+    </div>
+    <div class="col-xs-12 col-md-2 text-xs-center text-md-right social-footer">
+      <a href="https://twitter.com/codetalkshh" target="_blank" class="ja-social-icon ja-social-icon-twitter"><i class="fa fa-twitter"></i></a>
+<a href="https://www.facebook.com/198392450180667" target="_blank" class="ja-social-icon ja-social-icon-facebook"><i class="fa fa-facebook"></i></a>
+<a href="https://www.youtube.com/channel/UCfuj1MM5p37CRzWYPv_PsWA" target="_blank" class="ja-social-icon ja-social-icon-youtube"><i class="fa fa-youtube"></i></a>
+
+    </div>
+  </div>
+</div>
+
+    <script src="/assets/application-3b1671d4b73e225115695752e02fa639.js"></script>
+      <script src="/assets/page-specific/talks-575371188266182ab725d027819d7cf1.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

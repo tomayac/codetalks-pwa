@@ -1,0 +1,37 @@
+{
+  "name": "codetalks-pwa",
+  "version": "1.0.0",
+  "description": "code.talks Conference Demo Progressive Web App (PWA)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomayac/codetalks-pwa.git"
+  },
+  "keywords": [
+    "progressive web app",
+    "pwa",
+    "pwassemble"
+  ],
+  "author": "Thomas Steiner <tomac@google.com> (http://blog.tomayac.com/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/tomayac/codetalks-pwa/issues"
+  },
+  "homepage": "https://github.com/tomayac/codetalks-pwa#readme",
+  "devDependencies": {
+    "eslint": "^3.6.0",
+    "eslint-config-google": "^0.6.0"
+  },
+  "eslintConfig": {
+    "extends": "google",
+    "env": {
+      "browser": true,
+      "node": true,
+      "serviceworker": true
+    }
+  }
+}
