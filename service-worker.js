@@ -5,10 +5,9 @@ const STATIC_CACHE_NAME = 'pwassemble-static-cache-v1';
 const DYNAMIC_CACHE_NAME = 'pwassemble-dynamic-cache-v1';
 
 const STATIC_FILES = [
-  '/',
-  '/programm.html',
-  '/manifest.json',
-  '/js/main.js'
+  '/codetalks-pwa/programm.html',
+  '/codetalks-pwa/manifest.json',
+  '/codetalks-pwa/js/main.js'
 ];
 
 const addToCache = (request, networkResponse) => {
