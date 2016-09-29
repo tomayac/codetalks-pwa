@@ -2,11 +2,11 @@
   "name": "code.talks",
   "short_name": "codetalks",
   "gcm_sender_id": "884875544344",
-  "start_url": "/programm.html",
+  "start_url": "/codetalks-pwa/programm.html",
   "display": "standalone",
   "icons": [
     {
-      "src": ".\/assets\/favicons\/codetalks-196x196-fbd587aab00fdc51554b79063954e46b.png",
+      "src": "\/codetalks-pwa\/assets\/favicons\/codetalks-196x196-fbd587aab00fdc51554b79063954e46b.png",
       "sizes": "192x192",
       "type": "image\/png"
     }
