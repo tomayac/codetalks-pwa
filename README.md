@@ -1,5 +1,7 @@
 # ![code.talks logo](https://github.com/tomayac/codetalks-pwa/blob/master/assets/favicons/codetalks-32x32-5fd1b1d2fca4c09fb7f9f5c2b0c834d7.png) code.talks Progressive Web App
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tomayac/codetalks-pwa.svg)](https://greenkeeper.io/)
+
 This is an exemplary demo [Progressive Web App](https://developers.google.com/web/progressive-web-apps/) (PWA) for the [code.talks](https://www.codetalks.de/) conference. All assets are copyright of the conference organizers and are used under a *fair use* policy.
 
 ## 👷 Demo
